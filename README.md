@@ -17,8 +17,9 @@ To build Patchwork++, you can follow below codes.
 
 ```bash
 $ mkdir -p ~/patchworkpp_ws/src
-$ cd ~/patchworkpp_ws
+$ cd ~/patchworkpp_ws/src
 $ git clone https://github.com/kaancolak/patchwork-plusplus-ros2.git
+$ cd ..
 $ rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 $ colcon build 
 $ ros2 run patchwork_plusplus patchwork_plusplus_exe --ros-args --params-file ~/patchworkpp_ws/src/patchwork-plusplus-ros2/patchwork_plusplus/config/patchwork_plusplus.param.yaml
